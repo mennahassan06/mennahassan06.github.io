@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menna Hassan | Graphic Designer</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f5f0;
+            color: #171717;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(247, 245, 240, 0.92);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #171717;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.5;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            min-height: 100vh;
+            padding: 160px 7% 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .small-text {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(55px, 10vw, 120px);
+            line-height: 0.9;
+            letter-spacing: -6px;
+            margin-bottom: 35px;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            font-size: 20px;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 14px 28px;
+            background: #171717;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-4px);
+            background: #444;
+        }
+
+
+        /* SECTIONS */
+
+        section {
+            padding: 110px 7%;
+        }
+
+        .section-title {
+            font-size: clamp(40px, 6vw, 65px);
+            line-height: 1;
+            letter-spacing: -2px;
+            margin-bottom: 50px;
+        }
+
+
+        /* ABOUT */
+
+        .about {
+            background: #171717;
+            color: white;
+        }
+
+        .about-content {
+            max-width: 800px;
+        }
+
+        .about-content p {
+            font-size: 23px;
+            color: #ddd;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 35px;
+        }
+
+        .skill {
+            border: 1px solid #777;
+            padding: 9px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+        }
+
+
+        /* WORK */
+
+        .projects {
+            background: #f7f5f0;
+        }
+
+        .project-intro {
+            max-width: 700px;
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 45px;
+        }
+
+        .project-card {
+            background: #e7e3dc;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .project-cover {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-info {
+            padding: 35px;
+        }
+
+        .project-info h3 {
+            font-size: 35px;
+            margin-bottom: 8px;
+        }
+
+        .project-info p {
+            color: #666;
+            font-size: 16px;
+        }
+
+
+        /* GALLERY */
+
+        .gallery-title {
+            margin-top: 90px;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+            background: #e7e3dc;
+        }
+
+        .contact p {
+            font-size: 20px;
+            color: #555;
+        }
+
+        .contact-links {
+            margin-top: 30px;
+        }
+
+        .contact-links a {
+            color: #171717;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-links a:hover {
+            opacity: 0.5;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #171717;
+            color: #aaa;
+            font-size: 13px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 11px;
+            }
+
+            .hero {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            section {
+                padding: 80px 5%;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .gallery img {
+                height: 250px;
+            }
+
+            .project-cover {
+                height: 350px;
+            }
+
+            h1 {
+                letter-spacing: -4px;
+            }
+        }
+
+
+        @media (max-width: 500px) {
+
+            nav ul {
+                gap: 10px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img {
+                height: auto;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <div class="logo">
+            MH.
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#work">Work</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="small-text">
+                Graphic Designer
+            </div>
+
+            <h1>
+                Hi, I'm<br>
+                Menna.
+            </h1>
+
+            <p class="hero-description">
+                I create visual designs that turn ideas into
+                clear, engaging and meaningful experiences.
+            </p>
+
+            <a href="#work" class="button">
+                Explore My Work ↓
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="small-text">
+            About Me
+        </div>
+
+        <h2 class="section-title">
+            Designing ideas<br>
+            into visuals.
+        </h2>
+
+        <div class="about-content">
+
+            <p>
+                I'm Menna Hassan, a Graphic Designer and Mass
+                Communication student passionate about creating
+                visual identities, social media designs and
+                creative visual content.
+            </p>
+
+
+            <div class="skills">
+
+                <div class="skill">
+                    Graphic Design
+                </div>
+
+                <div class="skill">
+                    Social Media Design
+                </div>
+
+                <div class="skill">
+                    Visual Identity
+                </div>
+
+                <div class="skill">
+                    Branding
+                </div>
+
+                <div class="skill">
+                    Creative Design
+                </div>
+
+                <div class="skill">
+                    Photoshop
+                </div>
+
+                <div class="skill">
+                    Canva
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- WORK -->
+
+    <section class="projects" id="work">
+
+        <div class="small-text">
+            Selected Work
+        </div>
+
+        <h2 class="section-title">
+            My Work.
+        </h2>
+
+        <p class="project-intro">
+            A selection of visual designs and creative work
+            created for events, campaigns and social media.
+        </p>
+
+
+        <!-- PROJECT -->
+
+        <div class="project-card">
+
+            <img
+                src="1.jpg"
+                alt="RALLY Menoufia Closing Day"
+                class="project-cover"
+            >
+
+            <div class="project-info">
+
+                <h3>
+                    RALLY Menoufia — Closing Day
+                </h3>
+
+                <p>
+                    Event Visuals · Social Media Design ·
+                    Promotional Materials
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- GALLERY -->
+
+        <h3 class="gallery-title">
+            Project Gallery
+        </h3>
+
+
+        <div class="gallery">
+
+
+            <img src="1.jpg" alt="RALLY Closing Day">
+
+            <img src="2.jpg" alt="RALLY Closing Day">
+
+            <img src="3.jpg" alt="RALLY Closing Day">
+
+            <img src="4.jpg" alt="RALLY Closing Day">
+
+            <img src="5.jpg" alt="RALLY Closing Day">
+
+            <img src="6.jpg" alt="RALLY Closing Day">
+
+            <img src="Attending.jpg" alt="RALLY Attending">
+
+            <img src="Announcement.jpg" alt="RALLY Announcement">
+
+            <img src="Dr Alaa Redwan.jpg" alt="Dr Alaa Redwan">
+
+            <img src="Dr Fathalla El Shora.jpg" alt="Dr Fathalla El Shora">
+
+            <img src="PS AIEC.jpg" alt="RALLY AIEC">
+
+            <img src="PS CE.jpg" alt="RALLY CE">
+
+            <img src="PS CREATIVA.jpg" alt="RALLY CREATIVA">
+
+            <img src="PS TANTA.jpg" alt="RALLY TANTA">
+
+            <img src="Panel.jpg" alt="RALLY Panel">
+
+            <img src="RALLY Menoufia Closing Day schedule.jpg"
+                 alt="RALLY Closing Day Schedule">
+
+            <img src="SPEAKER1.jpg" alt="RALLY Speaker">
+
+            <img src="SPEAKER2.jpg" alt="RALLY Speaker">
+
+            <img src="SPONSOR.jpg" alt="RALLY Sponsor">
+
+            <img src="STD.jpg" alt="RALLY Students">
+
+            <img src="TICKET.jpg" alt="RALLY Ticket">
+
+            <img src="UCCD.jpg" alt="RALLY UCCD">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <div class="small-text">
+            Get In Touch
+        </div>
+
+        <h2 class="section-title">
+            Let's create<br>
+            something great.
+        </h2>
+
+        <p>
+            Interested in working together?
+        </p>
+
+
+        <div class="contact-links">
+
+            <!-- غيري الروابط دي بعدين -->
+
+            <a href="#" target="_blank">
+                LinkedIn
+            </a>
+
+            <a href="#" target="_blank">
+                Behance
+            </a>
+
+            <a href="mailto:your@email.com">
+                Email
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Menna Hassan. All rights reserved.
+
+    </footer>
+
+
+</body>
+
+</html>
