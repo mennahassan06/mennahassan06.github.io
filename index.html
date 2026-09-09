@@ -1,208 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Menna Hassan | Graphic Designer</title>
 
     <style>
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
-            background: #ffffff;
-            color: #191832;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8f8f6;
+            color: #171717;
             line-height: 1.6;
         }
 
+        /* HEADER */
+
         header {
-            padding: 25px 8%;
+            width: 100%;
+            padding: 25px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #eee;
+            background: #f8f8f6;
+            border-bottom: 1px solid #e5e5e5;
         }
 
-        header h2 {
-            font-size: 22px;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
         }
 
         nav a {
+            color: #171717;
             text-decoration: none;
-            color: #191832;
-            margin-left: 25px;
-            font-size: 15px;
+            font-size: 14px;
+            transition: 0.3s;
         }
 
         nav a:hover {
-            color: #ca0720;
+            opacity: 0.5;
         }
 
         /* HERO */
 
         .hero {
-            min-height: 75vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 60px 20px;
+            padding: 120px 7% 100px;
+        }
+
+        .hero-small {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 60px;
-            margin-bottom: 10px;
+            font-size: clamp(55px, 9vw, 110px);
+            line-height: 0.95;
+            max-width: 1000px;
+            margin-bottom: 35px;
         }
 
         .hero h1 span {
-            color: #ca0720;
+            color: #777;
         }
 
-        .hero p {
-            font-size: 20px;
+        .hero-description {
+            max-width: 650px;
+            font-size: 19px;
             color: #666;
-        }
-
-        /* SECTIONS */
-
-        section {
-            padding: 80px 8%;
-        }
-
-        .section-title {
-            font-size: 35px;
-            margin-bottom: 40px;
-            text-align: center;
         }
 
         /* ABOUT */
 
-        .about {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-            color: #555;
-            font-size: 18px;
+        .section {
+            padding: 80px 7%;
+        }
+
+        .section-label {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 45px;
+            line-height: 1.1;
+            margin-bottom: 30px;
+        }
+
+        .about-text {
+            max-width: 700px;
+            font-size: 19px;
+            color: #666;
         }
 
         /* SKILLS */
 
         .skills {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            max-width: 900px;
-            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            background: #ddd;
+            border: 1px solid #ddd;
+            margin-top: 40px;
         }
 
         .skill {
-            padding: 12px 22px;
-            border: 1px solid #ddd;
-            border-radius: 30px;
-            background: #fafafa;
+            background: #f8f8f6;
+            padding: 25px;
+            font-size: 16px;
         }
 
-        /* PROJECT */
+        /* WORK */
 
-        .projects {
-            max-width: 1000px;
-            margin: auto;
+        .work-section {
+            padding: 100px 7%;
         }
 
         .project-link {
+            display: block;
             text-decoration: none;
             color: inherit;
-            display: block;
         }
 
         .project-card {
-            border: 1px solid #eee;
-            border-radius: 15px;
-            overflow: hidden;
             background: white;
             transition: 0.3s;
         }
 
         .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
         }
 
-        .project-card img {
+        .project-image {
             width: 100%;
-            height: 450px;
-            object-fit: cover;
+            overflow: hidden;
+            background: white;
+        }
+
+        .project-image img {
+            width: 100%;
+            max-height: 700px;
+            object-fit: contain;
             display: block;
+            transition: 0.4s;
         }
 
-        .project-info {
-            padding: 25px;
+        .project-card:hover .project-image img {
+            transform: scale(1.01);
         }
 
-        .project-info h3 {
-            font-size: 25px;
-            margin-bottom: 10px;
+        .project-details {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 30px;
+            border-bottom: 1px solid #ddd;
         }
 
-        .project-info p {
+        .project-details h3 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .project-details p {
             color: #666;
-            margin-bottom: 15px;
+            font-size: 16px;
         }
 
         .view-project {
-            color: #ca0720;
-            font-weight: bold;
+            white-space: nowrap;
+            color: #171717;
+            font-size: 14px;
+            border-bottom: 1px solid #171717;
+            padding-bottom: 3px;
         }
 
         /* CONTACT */
 
         .contact {
-            text-align: center;
-            background: #f8f8f8;
+            padding: 100px 7%;
+            border-top: 1px solid #ddd;
         }
 
-        .contact p {
+        .contact-description {
+            max-width: 600px;
             color: #666;
-            margin-bottom: 25px;
+            font-size: 18px;
+            margin-bottom: 35px;
         }
 
         .contact-links {
             display: flex;
-            justify-content: center;
-            gap: 25px;
+            gap: 30px;
             flex-wrap: wrap;
         }
 
         .contact-links a {
+            color: #171717;
             text-decoration: none;
-            color: #191832;
-            font-weight: bold;
-            padding: 12px 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background: white;
+            font-size: 15px;
+            border-bottom: 1px solid #171717;
+            padding-bottom: 4px;
             transition: 0.3s;
         }
 
         .contact-links a:hover {
-            background: #ca0720;
-            color: white;
-            border-color: #ca0720;
+            opacity: 0.5;
         }
 
         /* FOOTER */
 
         footer {
+            background: #171717;
+            color: #888;
             text-align: center;
             padding: 25px;
-            font-size: 14px;
-            color: #777;
+            font-size: 13px;
         }
 
         /* MOBILE */
@@ -210,42 +250,89 @@
         @media (max-width: 700px) {
 
             header {
-                flex-direction: column;
+                padding: 20px 5%;
+            }
+
+            nav {
                 gap: 15px;
             }
 
             nav a {
-                margin: 0 8px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 80px 5% 70px;
             }
 
             .hero h1 {
-                font-size: 42px;
+                font-size: 55px;
             }
 
-            .project-card img {
-                height: 300px;
+            .section {
+                padding: 60px 5%;
             }
 
-            section {
-                padding: 60px 6%;
+            .section-title {
+                font-size: 36px;
             }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .work-section {
+                padding: 70px 5%;
+            }
+
+            .project-details {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .project-details h3 {
+                font-size: 25px;
+            }
+
+            .contact {
+                padding: 70px 5%;
+            }
+
         }
+
     </style>
+
 </head>
 
 <body>
+
 
     <!-- HEADER -->
 
     <header>
 
-        <h2>Menna Hassan</h2>
+        <div class="logo">
+            MH.
+        </div>
 
         <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#work">
+                Work
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
         </nav>
 
     </header>
@@ -255,51 +342,84 @@
 
     <section class="hero">
 
-        <div>
-
-            <h1>Hi, I'm <span>Menna.</span></h1>
-
-            <p>Graphic Designer</p>
-
+        <div class="hero-small">
+            Graphic Designer
         </div>
+
+        <h1>
+            Hi, I'm Menna.<br>
+            <span>I create visual ideas.</span>
+        </h1>
+
+        <p class="hero-description">
+            I'm a Graphic Designer and Mass Communication student
+            passionate about creating meaningful visual identities,
+            social media designs and creative visual content.
+        </p>
 
     </section>
 
 
     <!-- ABOUT -->
 
-    <section id="about">
+    <section class="section" id="about">
 
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about">
-
-            <p>
-                I'm Menna Hassan, a Graphic Designer and Mass Communication
-                student passionate about creating visual identities,
-                social media designs and creative visual content.
-            </p>
-
+        <div class="section-label">
+            About Me
         </div>
+
+        <h2 class="section-title">
+            Designing ideas<br>
+            into visuals.
+        </h2>
+
+        <p class="about-text">
+            I'm Menna Hassan, a Graphic Designer and Mass Communication
+            student passionate about creating visual identities,
+            social media designs and creative visual content.
+            I enjoy turning ideas into simple, clear and engaging designs.
+        </p>
 
     </section>
 
 
     <!-- SKILLS -->
 
-    <section id="skills">
+    <section class="section" id="skills">
 
-        <h2 class="section-title">Skills</h2>
+        <div class="section-label">
+            Skills
+        </div>
+
+        <h2 class="section-title">
+            What I do
+        </h2>
 
         <div class="skills">
 
-            <div class="skill">Graphic Design</div>
-            <div class="skill">Social Media Design</div>
-            <div class="skill">Visual Identity</div>
-            <div class="skill">Branding</div>
-            <div class="skill">Creative Design</div>
-            <div class="skill">Photoshop</div>
-            <div class="skill">Canva</div>
+            <div class="skill">
+                Graphic Design
+            </div>
+
+            <div class="skill">
+                Social Media Design
+            </div>
+
+            <div class="skill">
+                Visual Identity
+            </div>
+
+            <div class="skill">
+                Branding
+            </div>
+
+            <div class="skill">
+                Creative Design
+            </div>
+
+            <div class="skill">
+                Photoshop & Canva
+            </div>
 
         </div>
 
@@ -308,54 +428,77 @@
 
     <!-- WORK -->
 
-    <section id="work">
+    <section class="work-section" id="work">
 
-        <h2 class="section-title">My Work</h2>
+        <div class="section-label">
+            Selected Work
+        </div>
 
-        <div class="projects">
+        <h2 class="section-title">
+            Projects
+        </h2>
 
-            <!-- RALLY PROJECT -->
 
-            <a href="rally.html" class="project-link">
+        <!-- RALLY PROJECT -->
 
-                <div class="project-card">
+        <a href="rally.html" class="project-link">
 
-                    <img src="STD.jpg" alt="RALLY Menoufia Closing Day">
+            <div class="project-card">
 
-                    <div class="project-info">
+                <div class="project-image">
 
-                        <h3>RALLY Menoufia – Closing Day</h3>
-
-                        <p>
-                            A complete visual campaign created for
-                            RALLY Menoufia Closing Day, including social
-                            media designs and event visuals.
-                        </p>
-
-                        <span class="view-project">
-                            View Project →
-                        </span>
-
-                    </div>
+                    <img
+                        src="STD.jpg"
+                        alt="RALLY Menoufia Closing Day"
+                    >
 
                 </div>
 
-            </a>
 
-        </div>
+                <div class="project-details">
+
+                    <div>
+
+                        <h3>
+                            RALLY Menoufia — Closing Day
+                        </h3>
+
+                        <p>
+                            Event Visual Design · Social Media · Promotional Materials
+                        </p>
+
+                    </div>
+
+
+                    <span class="view-project">
+                        View Project →
+                    </span>
+
+                </div>
+
+            </div>
+
+        </a>
 
     </section>
 
 
     <!-- CONTACT -->
 
-    <section id="contact" class="contact">
+    <section class="contact" id="contact">
 
-        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-label">
+            Contact
+        </div>
 
-        <p>
-            Feel free to reach out or check out my work.
+        <h2 class="section-title">
+            Let's connect.
+        </h2>
+
+        <p class="contact-description">
+            Feel free to reach out or check out more of my work.
         </p>
+
 
         <div class="contact-links">
 
@@ -400,5 +543,7 @@
 
     </footer>
 
+
 </body>
+
 </html>
