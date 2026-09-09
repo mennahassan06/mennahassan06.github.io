@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sira | Egyptian Museum | Menna Hassan</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8f8f6;
+            color: #171717;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            width: 100%;
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f8f6;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .back-link {
+            color: #171717;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            opacity: 0.5;
+        }
+
+        /* PROJECT HERO */
+
+        .project-hero {
+            padding: 100px 7% 70px;
+        }
+
+        .project-category {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            line-height: 1;
+            max-width: 1000px;
+            margin-bottom: 30px;
+        }
+
+        .project-description {
+            max-width: 700px;
+            font-size: 19px;
+            color: #666;
+        }
+
+        /* PROJECT INFO */
+
+        .project-info-section {
+            padding: 30px 7% 80px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .info-box h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            font-size: 17px;
+        }
+
+        /* COVER */
+
+        .main-cover {
+            width: 100%;
+            padding: 0 7% 90px;
+        }
+
+        .main-cover img {
+            width: 100%;
+            max-height: 750px;
+            object-fit: contain;
+            display: block;
+            background: white;
+        }
+
+        /* GALLERY */
+
+        .gallery-section {
+            padding: 50px 7% 100px;
+        }
+
+        .gallery-title {
+            font-size: 40px;
+            margin-bottom: 45px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .gallery img {
+            width: 100%;
+            display: block;
+            background: white;
+        }
+
+        /* BACK BUTTON */
+
+        .back-container {
+            text-align: center;
+            padding: 20px 7% 100px;
+        }
+
+        .back-button {
+            display: inline-block;
+            text-decoration: none;
+            color: #171717;
+            border: 1px solid #171717;
+            padding: 14px 25px;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background: #171717;
+            color: white;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #171717;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 20px 5%;
+            }
+
+            .project-hero {
+                padding: 70px 5% 50px;
+            }
+
+            .project-info-section {
+                padding: 20px 5% 60px;
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .main-cover {
+                padding: 0 5% 60px;
+            }
+
+            .gallery-section {
+                padding: 30px 5% 70px;
+            }
+
+            .gallery-title {
+                font-size: 32px;
+            }
+
+            .back-container {
+                padding: 10px 5% 70px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            MH.
+        </div>
+
+        <a href="index.html" class="back-link">
+            ← Back to Portfolio
+        </a>
+
+    </header>
+
+
+    <!-- PROJECT HERO -->
+
+    <section class="project-hero">
+
+        <div class="project-category">
+            Campaign Visual Design
+        </div>
+
+        <h1>
+            Sira<br>
+            Egyptian Museum
+        </h1>
+
+        <p class="project-description">
+            A visual campaign created for the Egyptian Museum,
+            featuring a complete booklet designed to present
+            the museum and its experience in a creative visual way.
+        </p>
+
+    </section>
+
+
+    <!-- PROJECT INFORMATION -->
+
+    <section class="project-info-section">
+
+        <div class="info-box">
+            <h3>Project</h3>
+            <p>Sira – Egyptian Museum</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Category</h3>
+            <p>Campaign Visual Design</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Role</h3>
+            <p>Graphic Designer</p>
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT COVER -->
+
+    <div class="main-cover">
+
+        <img
+            src="sira 6.jpg"
+            alt="Sira Egyptian Museum"
+        >
+
+    </div>
+
+
+    <!-- PROJECT GALLERY -->
+
+    <section class="gallery-section">
+
+        <h2 class="gallery-title">
+            Project Gallery
+        </h2>
+
+        <div class="gallery">
+
+            <img src="sira 1.jpg" alt="Sira Design 1">
+
+            <img src="sira 2.jpg" alt="Sira Design 2">
+
+            <img src="sira 3.jpg" alt="Sira Design 3">
+
+            <img src="sira 4.jpg" alt="Sira Design 4">
+
+            <img src="sira 5.jpg" alt="Sira Design 5">
+
+            <img src="sira 6.jpg" alt="Sira Design 6">
+
+            <img src="sira 7.jpg" alt="Sira Design 7">
+
+            <img src="sira 8.jpg" alt="Sira Design 8">
+
+            <img src="sira 9.jpg" alt="Sira Design 9">
+
+            <img src="sira 10.jpg" alt="Sira Design 10">
+
+        </div>
+
+    </section>
+
+
+    <!-- BACK TO PORTFOLIO -->
+
+    <div class="back-container">
+
+        <a href="index.html" class="back-button">
+            ← Back to Portfolio
+        </a>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Menna Hassan. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
