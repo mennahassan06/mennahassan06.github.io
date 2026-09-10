@@ -1,0 +1,224 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Posters | Menna Hassan</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8f8f6;
+            color: #171717;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            width: 100%;
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f8f6;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .back-link {
+            color: #171717;
+            text-decoration: none;
+            font-size: 14px;
+            border-bottom: 1px solid #171717;
+            padding-bottom: 3px;
+        }
+
+        /* PROJECT HEADER */
+
+        .project-header {
+            padding: 100px 7% 60px;
+        }
+
+        .project-label {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .project-header h1 {
+            font-size: clamp(50px, 8vw, 90px);
+            line-height: 0.95;
+            margin-bottom: 25px;
+        }
+
+        .project-description {
+            max-width: 650px;
+            color: #666;
+            font-size: 18px;
+        }
+
+        /* POSTERS */
+
+        .posters {
+            padding: 20px 7% 100px;
+        }
+
+        .poster {
+            width: 100%;
+            margin-bottom: 50px;
+            background: white;
+        }
+
+        .poster img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #171717;
+            color: #888;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            header {
+                padding: 20px 5%;
+            }
+
+            .project-header {
+                padding: 70px 5% 40px;
+            }
+
+            .project-header h1 {
+                font-size: 55px;
+            }
+
+            .project-description {
+                font-size: 16px;
+            }
+
+            .posters {
+                padding: 20px 5% 70px;
+            }
+
+            .poster {
+                margin-bottom: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            MH.
+        </div>
+
+        <a href="index.html" class="back-link">
+            ← Back to Portfolio
+        </a>
+
+    </header>
+
+
+    <!-- PROJECT HEADER -->
+
+    <section class="project-header">
+
+        <div class="project-label">
+            Print Design
+        </div>
+
+        <h1>
+            Posters
+        </h1>
+
+        <p class="project-description">
+            A collection of poster designs created as part of my print design work.
+        </p>
+
+    </section>
+
+
+    <!-- POSTERS -->
+
+    <section class="posters">
+
+
+        <!-- LOVE YOUR SELF -->
+
+        <div class="poster">
+
+            <img
+                src="love your self.jpg"
+                alt="Love Your Self Poster"
+            >
+
+        </div>
+
+
+        <!-- BRAIN ROT -->
+
+        <div class="poster">
+
+            <img
+                src="تعفن الدماغ.jpg"
+                alt="Brain Rot Poster"
+            >
+
+        </div>
+
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 Menna Hassan. All Rights Reserved.
+
+    </footer>
+
+
+</body>
+
+</html>
+```
