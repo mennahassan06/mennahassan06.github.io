@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Design | Menna Hassan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f8f6;
+            color: #171717;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .back-link {
+            color: #171717;
+            text-decoration: none;
+            font-size: 14px;
+            border-bottom: 1px solid #171717;
+            padding-bottom: 3px;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 100px 7% 70px;
+        }
+
+        .section-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 80px);
+            line-height: 1;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 17px;
+            color: #666;
+        }
+
+        /* PROJECT */
+
+        .project-section {
+            padding: 70px 7%;
+            border-top: 1px solid #ddd;
+        }
+
+        .project-title {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        /* GRID */
+
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .resume-card {
+            background: white;
+            overflow: hidden;
+        }
+
+        .resume-card img {
+            width: 100%;
+            display: block;
+            transition: 0.4s;
+        }
+
+        .resume-card:hover img {
+            transform: scale(1.02);
+        }
+
+        /* COVER */
+
+        .resume-cover {
+            grid-column: span 2;
+        }
+
+        .resume-cover img {
+            max-height: 700px;
+            object-fit: contain;
+            background: #eee;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #ddd;
+            padding: 40px 7%;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 700px) {
+
+            .hero {
+                padding: 70px 5% 50px;
+            }
+
+            .project-section {
+                padding: 60px 5%;
+            }
+
+            .resume-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .resume-cover {
+                grid-column: span 1;
+            }
+
+            footer {
+                padding: 30px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            MH.
+        </div>
+
+        <a href="index.html" class="back-link">
+            ← Back to Portfolio
+        </a>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="section-label">
+            Selected Work
+        </div>
+
+        <h1>
+            Resume<br>
+            Design
+        </h1>
+
+        <p>
+            A collection of resume designs created with a focus on
+            clear visual hierarchy, professional presentation,
+            and personal branding.
+        </p>
+
+    </section>
+
+
+    <!-- RESUME DESIGNS -->
+
+    <section class="project-section">
+
+        <div class="section-label">
+            Resume Collection
+        </div>
+
+        <h2 class="project-title">
+            Selected Resume Designs
+        </h2>
+
+        <div class="resume-grid">
+
+            <!-- COVER -->
+
+            <div class="resume-card resume-cover">
+                <img
+                    src="Resumemenna.jpg"
+                    alt="Menna Resume Design"
+                >
+            </div>
+
+            <!-- RESUME 1 -->
+
+            <div class="resume-card">
+                <img
+                    src="منيرة الشمري.jpg"
+                    alt="منيرة الشمري Resume Design"
+                >
+            </div>
+
+            <!-- RESUME 2 -->
+
+            <div class="resume-card">
+                <img
+                    src="Resume2.jpg"
+                    alt="Resume Design 2"
+                >
+            </div>
+
+            <!-- RESUME 3 -->
+
+            <div class="resume-card">
+                <img
+                    src="resume yasmeen.jpg"
+                    alt="Yasmeen Resume Design"
+                >
+            </div>
+
+            <!-- RESUME 4 -->
+
+            <div class="resume-card">
+                <img
+                    src="Resume mohamed.jpg"
+                    alt="Mohamed Resume Design"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+            © 2026 Menna Hassan
+        </div>
+
+        <div>
+            Resume Design
+        </div>
+
+    </footer>
+
+</body>
+</html>
