@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wedding Event | Menna Hassan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f8f6;
+            color: #171717;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .back-link {
+            color: #171717;
+            text-decoration: none;
+            font-size: 14px;
+            border-bottom: 1px solid #171717;
+            padding-bottom: 3px;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 100px 7% 70px;
+        }
+
+        .section-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 80px);
+            line-height: 1;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 17px;
+            color: #666;
+        }
+
+        /* PROJECT */
+
+        .project-section {
+            padding: 70px 7%;
+            border-top: 1px solid #ddd;
+        }
+
+        .project-title {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        /* GRID */
+
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .event-card {
+            background: white;
+            overflow: hidden;
+        }
+
+        .event-card img {
+            width: 100%;
+            display: block;
+            transition: 0.4s;
+        }
+
+        .event-card:hover img {
+            transform: scale(1.02);
+        }
+
+        /* COVER */
+
+        .event-cover {
+            grid-column: span 2;
+        }
+
+        .event-cover img {
+            max-height: 700px;
+            object-fit: contain;
+            background: #eee;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #ddd;
+            padding: 40px 7%;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 700px) {
+
+            .hero {
+                padding: 70px 5% 50px;
+            }
+
+            .project-section {
+                padding: 60px 5%;
+            }
+
+            .event-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .event-cover {
+                grid-column: span 1;
+            }
+
+            footer {
+                padding: 30px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            MH.
+        </div>
+
+        <a href="index.html" class="back-link">
+            ← Back to Portfolio
+        </a>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="section-label">
+            Selected Work
+        </div>
+
+        <h1>
+            Wedding<br>
+            Event
+        </h1>
+
+        <p>
+            A collection of visual designs created for a wedding event,
+            focusing on an elegant and cohesive event identity.
+        </p>
+
+    </section>
+
+
+    <!-- EVENT DESIGNS -->
+
+    <section class="project-section">
+
+        <div class="section-label">
+            Event Visual Design
+        </div>
+
+        <h2 class="project-title">
+            Selected Designs
+        </h2>
+
+        <div class="event-grid">
+
+            <!-- COVER -->
+
+            <div class="event-card event-cover">
+                <img
+                    src="wiMB2.jpg"
+                    alt="Wedding Event Design"
+                >
+            </div>
+
+            <!-- DESIGN 1 -->
+
+            <div class="event-card">
+                <img
+                    src="MOZA EVENT.jpg"
+                    alt="MOZA EVENT Design"
+                >
+            </div>
+
+            <!-- DESIGN 2 -->
+
+            <div class="event-card">
+                <img
+                    src="wiMB1.jpg"
+                    alt="Wedding Event Design 1"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+            © 2026 Menna Hassan
+        </div>
+
+        <div>
+            Wedding Event
+        </div>
+
+    </footer>
+
+</body>
+</html>
