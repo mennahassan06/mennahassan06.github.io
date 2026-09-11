@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Social Media Designs | Menna Hassan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f8f6;
+            color: #171717;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+
+        header {
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .back-link {
+            color: #171717;
+            text-decoration: none;
+            font-size: 14px;
+            border-bottom: 1px solid #171717;
+            padding-bottom: 3px;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 100px 7% 70px;
+        }
+
+        .section-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 7vw, 80px);
+            line-height: 1;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 17px;
+            color: #666;
+        }
+
+        /* CATEGORY */
+
+        .category {
+            padding: 70px 7%;
+            border-top: 1px solid #ddd;
+        }
+
+        .category-title {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        /* GRID */
+
+        .design-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .design-card {
+            background: white;
+            overflow: hidden;
+        }
+
+        .design-card img {
+            width: 100%;
+            display: block;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .design-card:hover img {
+            transform: scale(1.03);
+        }
+
+        /* MAKEUP COVER */
+
+        .makeup-cover {
+            grid-column: span 3;
+        }
+
+        .makeup-cover img {
+            aspect-ratio: 16 / 7;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #ddd;
+            padding: 40px 7%;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            .design-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .makeup-cover {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 20px 5%;
+            }
+
+            .hero {
+                padding: 70px 5% 50px;
+            }
+
+            .category {
+                padding: 60px 5%;
+            }
+
+            .design-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .makeup-cover {
+                grid-column: span 1;
+            }
+
+            .makeup-cover img {
+                aspect-ratio: 1 / 1;
+            }
+
+            footer {
+                padding: 30px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            MH.
+        </div>
+
+        <a href="index.html" class="back-link">
+            ← Back to Portfolio
+        </a>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="section-label">
+            Selected Work
+        </div>
+
+        <h1>
+            Social Media<br>
+            Designs
+        </h1>
+
+        <p>
+            A collection of social media designs created for different
+            brands, occasions, and audiences, including food,
+            educational advertisements, Eid campaigns, and beauty content.
+        </p>
+
+    </section>
+
+
+    <!-- FOOD -->
+
+    <section class="category">
+
+        <div class="section-label">
+            01
+        </div>
+
+        <h2 class="category-title">
+            Food
+        </h2>
+
+        <div class="design-grid">
+
+            <div class="design-card">
+                <img
+                    src="EAT FRESH.jpg"
+                    alt="EAT FRESH Social Media Design"
+                >
+            </div>
+
+            <div class="design-card">
+                <img
+                    src="Buy 1.jpg"
+                    alt="Buy 1 Social Media Design"
+                >
+            </div>
+
+            <div class="design-card">
+                <img
+                    src="الجمعة أحلي مع فريد تشيكن.jpg"
+                    alt="الجمعة أحلي مع فريد تشيكن Social Media Design"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TEACHERS -->
+
+    <section class="category">
+
+        <div class="section-label">
+            02
+        </div>
+
+        <h2 class="category-title">
+            Teachers’ Advertisements
+        </h2>
+
+        <div class="design-grid">
+
+            <div class="design-card">
+                <img
+                    src="عندليب العلوم.jpg"
+                    alt="عندليب العلوم Advertisement"
+                >
+            </div>
+
+            <div class="design-card">
+                <img
+                    src="ابراهيم سامي.jpg"
+                    alt="ابراهيم سامي Advertisement"
+                >
+            </div>
+
+            <div class="design-card">
+                <img
+                    src="Mai.jpg"
+                    alt="Mai Advertisement"
+                >
+            </div>
+
+            <div class="design-card">
+                <img
+                    src="ends ads.jpg"
+                    alt="Teachers Advertisement"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EID -->
+
+    <section class="category">
+
+        <div class="section-label">
+            03
+        </div>
+
+        <h2 class="category-title">
+            Eid
+        </h2>
+
+        <div class="design-grid">
+
+            <div class="design-card">
+                <img
+                    src="Eid El-adha Design.jpg"
+                    alt="Eid El-adha Social Media Design"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAKEUP -->
+
+    <section class="category">
+
+        <div class="section-label">
+            04
+        </div>
+
+        <h2 class="category-title">
+            Makeup
+        </h2>
+
+        <div class="design-grid">
+
+            <!-- MAKEUP COVER -->
+
+            <div class="design-card makeup-cover">
+                <img
+                    src="REVLON.jpg"
+                    alt="REVLON Makeup Design"
+                >
+            </div>
+
+            <div class="design-card">
+                <img
+                    src="r1.jpg"
+                    alt="Makeup Design 1"
+                >
+            </div>
+
+            <div class="design-card">
+                <img
+                    src="r2.jpg"
+                    alt="Makeup Design 2"
+                >
+            </div>
+
+            <div class="design-card">
+                <img
+                    src="r3.jpg"
+                    alt="Makeup Design 3"
+                >
+            </div>
+
+            <div class="design-card">
+                <img
+                    src="r4.jpg"
+                    alt="Makeup Design 4"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div>
+            © 2026 Menna Hassan
+        </div>
+
+        <div>
+            Social Media Designs
+        </div>
+
+    </footer>
+
+</body>
+</html>
