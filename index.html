@@ -2,10 +2,16 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Menna Hassan | Graphic Designer</title>
+
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
 
@@ -20,9 +26,9 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f8f8f6;
-            color: #171717;
+            font-family: 'Poppins', sans-serif;
+            background: #f8dfdd;
+            color: #4f3551;
             line-height: 1.6;
         }
 
@@ -34,13 +40,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #f8f8f6;
-            border-bottom: 1px solid #e5e5e5;
+            background: #f8dfdd;
+            border-bottom: 1px solid #e8c3c5;
         }
 
         .logo {
             font-size: 24px;
-            font-weight: bold;
+            font-weight: 700;
             letter-spacing: 2px;
         }
 
@@ -50,7 +56,7 @@
         }
 
         nav a {
-            color: #171717;
+            color: #4f3551;
             text-decoration: none;
             font-size: 14px;
             transition: 0.3s;
@@ -70,7 +76,7 @@
             font-size: 13px;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: #777;
+            color: #755c73;
             margin-bottom: 20px;
         }
 
@@ -82,14 +88,16 @@
         }
 
         .hero h1 span {
-            color: #777;
-            font-size: 0.65em;
+            color: #755c73;
+            font-size: 0.42em;
+            font-weight: 500;
+            line-height: 1.2;
         }
 
         .hero-description {
             max-width: 650px;
             font-size: 19px;
-            color: #666;
+            color: #755c73;
         }
 
         /* GENERAL SECTION */
@@ -102,7 +110,7 @@
             font-size: 13px;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: #777;
+            color: #755c73;
             margin-bottom: 20px;
         }
 
@@ -115,7 +123,7 @@
         .about-text {
             max-width: 700px;
             font-size: 19px;
-            color: #666;
+            color: #755c73;
         }
 
         /* SKILLS */
@@ -124,13 +132,13 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 1px;
-            background: #ddd;
-            border: 1px solid #ddd;
+            background: #d9b9bd;
+            border: 1px solid #d9b9bd;
             margin-top: 40px;
         }
 
         .skill {
-            background: #f8f8f6;
+            background: #fff9f8;
             padding: 25px;
             font-size: 16px;
         }
@@ -141,25 +149,25 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1px;
-            background: #ddd;
-            border: 1px solid #ddd;
+            background: #d9b9bd;
+            border: 1px solid #d9b9bd;
             margin-top: 40px;
         }
 
         .service {
-            background: #f8f8f6;
+            background: #fff9f8;
             padding: 35px;
             min-height: 180px;
             transition: 0.3s;
         }
 
         .service:hover {
-            background: white;
+            background: #ffffff;
         }
 
         .service-number {
             font-size: 13px;
-            color: #777;
+            color: #b76e79;
             margin-bottom: 25px;
         }
 
@@ -169,7 +177,7 @@
         }
 
         .service p {
-            color: #666;
+            color: #755c73;
             font-size: 15px;
             max-width: 450px;
         }
@@ -187,7 +195,7 @@
         }
 
         .project-card {
-            background: white;
+            background: #fff9f8;
             transition: 0.3s;
         }
 
@@ -198,7 +206,7 @@
         .project-image {
             width: 100%;
             overflow: hidden;
-            background: white;
+            background: #fff9f8;
         }
 
         .project-image img {
@@ -219,7 +227,7 @@
             justify-content: space-between;
             align-items: flex-start;
             gap: 30px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #d9b9bd;
         }
 
         .project-details h3 {
@@ -228,15 +236,15 @@
         }
 
         .project-details p {
-            color: #666;
+            color: #755c73;
             font-size: 16px;
         }
 
         .view-project {
             white-space: nowrap;
-            color: #171717;
+            color: #4f3551;
             font-size: 14px;
-            border-bottom: 1px solid #171717;
+            border-bottom: 1px solid #4f3551;
             padding-bottom: 3px;
         }
 
@@ -245,7 +253,7 @@
         .print-section,
         .more-section {
             padding: 100px 7%;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #d9b9bd;
         }
 
         .print-grid,
@@ -261,7 +269,7 @@
             display: block;
             text-decoration: none;
             color: inherit;
-            background: white;
+            background: #fff9f8;
             transition: 0.3s;
         }
 
@@ -275,7 +283,7 @@
             width: 100%;
             aspect-ratio: 1 / 1;
             overflow: hidden;
-            background: #eee;
+            background: #e8c3c5;
         }
 
         .print-image img,
@@ -295,7 +303,7 @@
         .print-details,
         .more-details {
             padding: 20px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #d9b9bd;
         }
 
         .print-details h3,
@@ -306,7 +314,7 @@
 
         .print-details p,
         .more-details p {
-            color: #666;
+            color: #755c73;
             font-size: 14px;
         }
 
@@ -314,9 +322,9 @@
         .more-view {
             display: inline-block;
             margin-top: 15px;
-            color: #171717;
+            color: #4f3551;
             font-size: 14px;
-            border-bottom: 1px solid #171717;
+            border-bottom: 1px solid #4f3551;
             padding-bottom: 3px;
         }
 
@@ -327,19 +335,19 @@
             height: 100%;
             border: none;
             pointer-events: none;
-            background: white;
+            background: #fff9f8;
         }
 
         /* CONTACT */
 
         .contact {
             padding: 100px 7%;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #d9b9bd;
         }
 
         .contact-description {
             max-width: 600px;
-            color: #666;
+            color: #755c73;
             font-size: 18px;
             margin-bottom: 35px;
         }
@@ -351,10 +359,10 @@
         }
 
         .contact-links a {
-            color: #171717;
+            color: #4f3551;
             text-decoration: none;
             font-size: 15px;
-            border-bottom: 1px solid #171717;
+            border-bottom: 1px solid #4f3551;
             padding-bottom: 4px;
             transition: 0.3s;
         }
@@ -366,8 +374,8 @@
         /* FOOTER */
 
         footer {
-            background: #171717;
-            color: #888;
+            background: #3a283a;
+            color: #e8c3c5;
             text-align: center;
             padding: 25px;
             font-size: 13px;
@@ -409,7 +417,7 @@
             }
 
             .hero h1 span {
-                font-size: 0.65em;
+                font-size: 0.42em;
             }
 
             .section {
@@ -462,6 +470,7 @@
         }
 
     </style>
+
 </head>
 
 <body>
